@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next';
-import { Title } from '@/styles/pages/Home'
+import { Title, SubTitle } from '@/styles/pages/Home'
 import SEO from '@/components/SEO';
 
 interface IProduct {
@@ -21,15 +21,12 @@ export default function Home({ recommendedProducts }: IHomeProps) {
         shouldExcludeTitleSuffix
       />
       <section>
-        <Title>Products</Title>
+        <Title>Tipo de Carregamento</Title>
         <ul>
-          { recommendedProducts.map(recommendedProduct => {
-            return (
-              <li key= {recommendedProduct.id}>
-                {recommendedProduct.title}
-              </li>
-            );
-          })}
+          <li><SubTitle><a href="../poc/client-side-fetching">Renderização do lado do Cliente (Client-side Rendering)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/server-side-rendering">Renderização do lado do Servidor (Server-side Rendering)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/static-site-genereation">Geração Estática (Static Generation)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/mg">Página Estática Dinâmica (Dynamic Static Page)</a></SubTitle></li>
         </ul>
       </section>
     </div>
