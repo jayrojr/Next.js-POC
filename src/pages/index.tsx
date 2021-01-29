@@ -11,7 +11,7 @@ interface IHomeProps {
   recommendedProducts: IProduct[];
 }
 
-export default function Home({ recommendedProducts }: IHomeProps) {
+export default function Home() {
 
   return (
     <div>
@@ -33,13 +33,13 @@ export default function Home({ recommendedProducts }: IHomeProps) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<IHomeProps> = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommended`);  
-  const recommendedProducts = await response.json();
+// export const getServerSideProps: GetServerSideProps<IHomeProps> = async () => {
+//   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommended`);  
+//   const recommendedProducts = await response.json();
 
-  return {
-    props: {
-      recommendedProducts,
-    }
-  }
-}
+//   return {
+//     props: {
+//       recommendedProducts,
+//     }
+//   }
+// }

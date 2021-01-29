@@ -9,7 +9,7 @@ export default createGlobalStyle`
   body {
     background: #FFF;
     color: #000;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   a {

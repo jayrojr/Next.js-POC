@@ -58,11 +58,11 @@ export const getStaticProps: GetStaticProps<IEstadoProps> = async (context) => {
   const response = await fetch(`http://localhost:3333/estados?sigla=${String(slugEstado).toUpperCase()}`);
   const estados = await response.json();
 
-  return {
+  return {    
     props: {
       estados
     }, 
-    revalidate: 60,
+    revalidate: 3600,
   }
 
 }
