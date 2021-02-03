@@ -23,10 +23,10 @@ export default function Home() {
       <section>
         <Title>Tipo de Carregamento</Title>
         <ul>
-          <li><SubTitle><a href="../poc/client-side-fetching">Renderização do lado do Cliente (Client-side Rendering)</a></SubTitle></li>
-          <li><SubTitle><a href="../poc/server-side-rendering">Renderização do lado do Servidor (Server-side Rendering)</a></SubTitle></li>
-          <li><SubTitle><a href="../poc/static-site-genereation">Geração Estática (Static Generation)</a></SubTitle></li>
-          <li><SubTitle><a href="../poc/mg">Página Estática Dinâmica (Dynamic Static Page)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/client-side-fetching">Renderização do lado do Cliente (Client-side Rendering, SPA, Angular, Vue, etc)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/server-side-rendering">Renderização do lado do Servidor (Server-side Rendering, JSF, PHP, ASP.Net, etc)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/static-site-genereation">Geração Estática (Static Generation, Next.js)</a></SubTitle></li>
+          <li><SubTitle><a href="../poc/mg">Página Estática Dinâmica (Dynamic Static Page, Next.js)</a></SubTitle></li>
         </ul>
       </section>
     </div>

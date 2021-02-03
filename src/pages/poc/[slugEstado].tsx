@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticProps<IEstadoProps> = async (context) => {
     props: {
       estados
     }, 
-    revalidate: 3600,
+    revalidate: 3,
   }
 
 }
